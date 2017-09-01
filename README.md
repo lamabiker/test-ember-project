@@ -1,7 +1,12 @@
-# Ember-syfl-demo-project
+# Test Ember project
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Project developed and set up to show off basic features of an Ember project.
+Could be useful for presentations. It demonstrates:
+
+* Mirage server and faker
+* Acceptance testing with Yadda
+* SASS structuring
+* Syfl Ember blueprints
 
 ## Prerequisites
 
@@ -15,10 +20,18 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd ember-syfl-demo-project`
+* `git clone git@github.com:lamabiker/test-ember-project.git` this repository
+* `cd test-ember-project`
 * `npm install`
-* `bower install`
+* `ember install ember-cli-mirage`
+* `ember install ember-cli-yadda`
+
+## What's added from a basic Ember project:
+
+* Addons to the `package.json`
+* SASS added to `ember-cli-build,js`
+* Created a `templates/application.hbs` file
+* Added the `.app-body` class in `index.html`
 
 ## Running / Development
 
@@ -39,10 +52,6 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
-
-Specify what it takes to deploy your app.
-
 ## Further Reading / Useful Links
 
 * [ember.js](http://emberjs.com/)
@@ -50,4 +59,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
