@@ -1,0 +1,68 @@
+.form
+
+  &-group
+    margin-bottom: 20px
+
+  &-group label
+    vertical-align: top
+    display: inline-block
+    width: 100px
+
+  &-control
+    padding: 5px
+    vertical-align: middle
+
+  &-text-input
+    background: $white
+
+    &--close
+      display: inline-block
+      margin: 0
+      border: 0
+      font-size: 0
+      background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 15%,rgba(255,255,255,1) 100%)
+      transform: translateX(-110%)
+      cursor: pointer
+      // padding-left: 10px
+
+      &:before
+        font-size: 14px
+        color: $text-color
+
+  &-radio-buttons
+
+    label
+      display: inline-block
+      font-weight: bold
+
+      + label
+        margin-left: 20px
+
+    input
+      display: none
+
+      &:checked + *
+        color: $primary
+        opacity: 1
+
+        &:before
+          background: $primary
+          border-color: $primary
+
+
+    &--option
+      display: inline-block
+      font-size: 0.75em
+      text-transform: uppercase
+      cursor: pointer
+      user-select: none
+      opacity: .6
+
+      &:before
+        content: ""
+        display: inline-block
+        height: 4px
+        width: 4px
+        border-radius: 50%
+        border: 2px solid #ccc
+        margin-right: 6px

@@ -1,0 +1,16 @@
+<table class="{{NS}}--list">
+  <tr class="{{NS}}--list-head">
+    <th align="left">Name</th>
+    <th>Role</th>
+    <th></th>
+  </tr>
+  {{#each model as |item|}}
+    <tr class="{{NS}}--item" data-test-user-list-item="true">
+      <td class="{{NS}}--name">{{item.name}}</td>
+      <td class="{{NS}}--role">{{item.role}}</td>
+      <td><button {{action "deleteUser" item.id}} class="btn btn-warning">Delete user</button></td>
+    </tr>
+  {{/each}}
+</table>
+
+{{yield}}

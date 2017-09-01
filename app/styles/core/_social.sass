@@ -1,0 +1,12 @@
+$social-color-list: (storyful: #FF6716, instagram: #125688, twitter:#00ACED, youtube: #bb0000, facebook: #3B5998, periscope: #2F9ABC, vine: #00A479)
+
+// Build border and overlay classes
+@each $name, $color in $social-color-list
+  .social-#{$name}-border
+    border-color: $color
+
+  .social-#{$name}-bg
+    background-color: $color
+
+  .social-#{$name}-overlay
+    background: rgba($color, 0.4)

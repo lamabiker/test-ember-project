@@ -1,0 +1,19 @@
+<div class="{{NS}}--inputs">
+  {{input value=user.name placeholder="Add a user"
+      class=(concat NS "--input")
+      enter=(action "addUser") data-test-add-input="true"}}
+
+  {{#if user.name}}
+    {{input value=user.role placeholder="User description"
+        class=(concat NS "--input")
+        enter=(action "addUser")}}
+  {{/if}}
+</div>
+
+<button class="{{NS}}--btn btn btn-success"
+    data-test-add-user-button="true"
+    {{action "addUser"}}>
+  Add user
+</button>
+
+{{yield}}

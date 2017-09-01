@@ -1,0 +1,65 @@
+.btn
+  padding: .5em .9em
+  font-size: .7em
+  line-height: 1.2em
+  font-weight: bold
+  display: inline-block
+  text-align: center
+  font-family: inherit
+  background: $white
+  text-transform: none
+  border-radius: 8px
+  border: 2px solid $gray-lighter
+  color: $text-color
+  cursor: pointer
+  user-select: none
+  vertical-align: middle
+
+  &:hover
+    border-color: $gray-light
+
+  &:focus, &:active
+    outline: none
+
+  // Specials
+  &-action
+    text-transform: uppercase
+    margin: 0
+    padding: .9em 1.3em
+    line-height: 1
+
+    & + &
+      margin-left: 0
+
+// Colour-themed buttons
+@mixin btn($color-name, $color)
+  .btn-#{$color-name}
+    background: $color
+    border-color: $color
+    color: $white
+    transition-duration: .1s
+    &:hover
+      background: lighten($color, 5%)
+      border-color: lighten($color, 5%)
+    &:active, &:focus
+      background: darken($color, 10%)
+      border-color: darken($color, 10%)
+
+@include btn(primary, $primary)
+@include btn(success, $success)
+@include btn(info, $info)
+@include btn(warning, $warning)
+@include btn(danger, $danger)
+@include btn(default-action, $action)
+
+.btn-warning
+  color: $text-secondary-color
+
+.btn-link
+  cursor: pointer
+  text-decoration: underline
+  border: none
+  padding: 0
+
+.btn-sm
+  font-size: .8em

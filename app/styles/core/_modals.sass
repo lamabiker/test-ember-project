@@ -1,0 +1,30 @@
+// .modal
+//   &--inner
+//     position: absolute
+//     top: 0
+//     left: 0
+//     bottom: 0
+//     right: 0
+//     background: rgba(255,255,255,.7)
+//     z-index: 10
+//     opacity: 0
+//
+//   &.is-active
+//     .modal--inner
+//       opacity: 1
+
+.ember-modal-overlay
+
+  &.translucent
+    background: rgba(0,0,0,.6)
+
+.ember-modal-dialog
+  padding: 0
+  border: 0
+  border-radius: 4px
+  box-shadow: none
+  overflow: hidden
+  background: #f2f6f7
+  max-height: 95vh
+  display: flex
+  flex-direction: column
