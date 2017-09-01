@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'ember-syfl-demo-project',
+    modulePrefix: 'test-ember-project',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',

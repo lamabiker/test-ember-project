@@ -1,6 +1,6 @@
 import Ember from 'ember';
 
-const { Component, get } = Ember;
+const { Component, get, set } = Ember;
 
 const NS = 'users-form';
 
@@ -18,6 +18,7 @@ export default Component.extend({
   actions: {
     addUser() {
       this.sendAction('onAddUser', get(this, 'user'));
+      set(this, 'user', { name: null, role: null });
     }
   }
 

@@ -1,7 +1,7 @@
 {
-  "name": "ember-syfl-demo-project",
-  "version": "0.0.0",
-  "description": "Small description for ember-syfl-demo-project goes here",
+  "name": "test-ember-project",
+  "version": "0.0.1",
+  "description": "Basic Ember project with Mirage and Yadda acceptance testing",
   "private": true,
   "directories": {
     "doc": "doc",
