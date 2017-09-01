@@ -16,6 +16,12 @@ export default Ember.Route.extend({
     },
 
     deleteUser(userId) {
+
+      // An alternative solution here would be to just pass up the whole user
+      // model and delete it directly:
+      //
+      // user.destroyRecord();
+
       this.store.findRecord('user', userId, { backgroundReload: false })
         .then((user) => user.destroyRecord());
     }
