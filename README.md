@@ -29,13 +29,13 @@ You will need the following things properly installed on your computer.
 ## What's added from a basic Ember project:
 
 * Addons to the `package.json`
-* SASS added to `ember-cli-build,js`
+* SASS added to `ember-cli-build.js`
 * Created a `templates/application.hbs` file
 * Added the `.app-body` class in `index.html`
 
 ## Running / Development
 
-* `ember serve`
+* `ember server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
 ### Code Generators
